@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.overflow, .circle-square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overflow {
+    z-index: 9998;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke
+}
+
+.circle-square {
+    z-index: 9999;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: circle-rotate 1.5s infinite linear;
+}
+
+.red,.green,.yellow,.blue{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.red {
+    background-color: #EA4335;
+    
+  
+}
+
+.blue {
+    background-color: #4285f4;
+   
+   
+}
+
+.green {
+    background-color: #34A853;
+    
+  
+}
+
+.yellow {
+    background-color: #FBBC05;
+    
+}
+
+
+/* CSS ANIMATION */
+
+
+@keyframes circle-rotate {
+ 
+    from {
+        transform: translate(-50%, -50%);
+    }
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

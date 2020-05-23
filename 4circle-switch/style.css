@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.overflow, .circle-square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overflow {
+    z-index: 9998;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke
+}
+
+.circle-square {
+    z-index: 9999;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.red,.green,.yellow,.blue{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.red {
+    background-color: #EA4335;
+    animation: switchRed 1s infinite;
+  
+}
+
+.blue {
+    background-color: #4285f4;
+    animation: switchBlue 1s infinite;
+   
+}
+
+.green {
+    background-color: #34A853;
+    animation: switchGreen 1s infinite;
+  
+}
+
+.yellow {
+    background-color: #FBBC05;
+    animation: switchYellow 1s infinite;
+    
+}
+
+
+/* CSS ANIMATION */
+
+@keyframes switchRed {
+  
+    
+    25% {
+
+        background-color: #4285f4;
+
+    }
+    
+    50% {
+        
+        background-color: #4285f4;
+        
+    }
+
+    75% {
+        
+        background-color:#4285f4;
+        
+    }
+
+    100% {
+        background-color: #EA4335;
+        
+    }
+}
+
+@keyframes switchBlue {
+
+    
+    25% {
+
+        background-color: #EA4335;
+
+    }
+    
+    50% {
+        
+        background-color: #FBBC05;
+        
+    }
+
+    75% {
+        
+        background-color: #FBBC05;
+        
+    }
+
+    100% {
+        background-color: #4285f4;
+        
+    }
+}
+
+
+@keyframes switchGreen {
+  
+
+    25% {
+        background-color: #34A853;
+    }
+
+    50% {
+       
+        background-color: #34A853;
+    }
+
+    75% {
+        background-color: #EA4335;
+    }
+    
+
+    100% {
+        background-color: #34A853;
+        
+    }
+}
+
+@keyframes circle-rotate {
+ 
+    25% {
+
+        background-color: #FBBC05;
+    }
+
+    
+    50% {
+        
+        background-color: #EA4335;
+        
+    }
+
+    75% {
+       
+        background-color: #34A853;
+        
+    }
+
+    100% {
+        background-color: #FBBC05;
+    }
+}
